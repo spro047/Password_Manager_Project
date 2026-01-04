@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Password Manager</title>
+  <link rel="stylesheet" href="/static/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+  <div class="container">
+    <h1>🔐 Password Manager (Local)</h1>
+
+    <section class="card">
+      <h2>Add Entry</h2>
+      <div class="row">
+        <input id="account" placeholder="Account (e.g., Gmail)" />
+        <input id="username" placeholder="Username / Email" />
+      </div>
+      <div class="row">
+        <input id="password" placeholder="Password" />
+        <button id="genBtn">Generate</button>
+        <input id="len" type="number" min="8" max="64" value="16" title="Length" />
+      </div>
+      <div class="row">
+        <button id="addBtn">Add</button>
+        <button id="copyBtn">Copy Password</button>
+      </div>
+      <p class="note">Tip: Adjust the generated password length (8–64).</p>
+    </section>
+
+    <section class="card">
+      <h2>Saved Passwords (Decrypted for demo)</h2>
+      <div id="list" class="list"></div>
+      <p class="warn">⚠ Demo only. Don’t show decrypted passwords in production.</p>
+    </section>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>

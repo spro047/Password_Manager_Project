@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Local secrets / data
+key.key
+passwords.json
+
+# OS
+.DS_Store
+Thumbs.db
